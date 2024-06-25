@@ -17,7 +17,7 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width:fit-content;
     padding: 0;
     margin: 0;
     
@@ -104,13 +104,14 @@ nav a:hover {
 .hero article {
     display: block;
     position: absolute;
-    left: 5%;
-    bottom: 15%;
+    left: 7%;
+    bottom: 35%;
     background: rgba(0, 0, 0, 0.5);
     padding: 50px;
-    width: 700px;
+    width: 960px;
     color: white;
     text-align: left;
+    font-size: 18px;
     
 }
 
@@ -124,7 +125,7 @@ nav a:hover {
 .hero article h2{
     position: absolute;
     color: #FAFAFA;
-    bottom: 75%;
+    bottom: 68%;
     left: 45%;
 
 }
