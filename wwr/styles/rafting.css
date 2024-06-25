@@ -14,10 +14,12 @@
     --nav-hover-link-color: #FAFAFA;
     --nav-hover-background-color: #8d99ae;
 }
+
 body {
     font-family: var(--paragraph-font);
-    max-width:960px;
-    padding: 20px;
+    max-width: 960px;
+    padding: 0;
+    margin: 0;
     
 }
 
@@ -100,12 +102,13 @@ nav a:hover {
 }
 
 .hero article {
+    display: block;
     position: absolute;
     left: 5%;
-    bottom: 25%;
+    bottom: 15%;
     background: rgba(0, 0, 0, 0.5);
     padding: 50px;
-    width: 750px;
+    width: 700px;
     color: white;
     text-align: left;
     
@@ -157,4 +160,27 @@ footer nav img {
 
 .sociallinks {
     background-color: var(--accent1-color);
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 10px;
+    }
+
+    .hero article {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .hero article {
+        width: 50%;
+        padding: 15px;
+    }
 }
