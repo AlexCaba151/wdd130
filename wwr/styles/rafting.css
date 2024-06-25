@@ -162,26 +162,3 @@ footer nav img {
 .sociallinks {
     background-color: var(--accent1-color);
 }
-
-@media (max-width: 767px) {
-    .hero {
-        padding: 10px;
-    }
-
-    .hero article {
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-/* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .hero {
-        padding: 20px;
-    }
-
-    .hero article {
-        width: 50%;
-        padding: 15px;
-    }
-}
