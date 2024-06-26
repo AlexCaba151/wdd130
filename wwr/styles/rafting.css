@@ -14,14 +14,20 @@
     --nav-hover-link-color: #FAFAFA;
     --nav-hover-background-color: #8d99ae;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
 
 body {
     font-family: var(--paragraph-font);
-    max-width:fit-content;
-    padding: 0;
-    margin: 0;
+    max-width:960px;
     
 }
+
 
 h1,
 h2,
@@ -48,6 +54,9 @@ header img {
 
 header h1 {
     margin: 0;
+    position: absolute;
+    right: 87%;
+    font-size: 2rem;
     
 }
 
@@ -75,72 +84,72 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+section {
+    padding: 10px;
+    display:block
+    
+    
+}
 .hero {
     position: relative;
-    text-align: center;
-    color:white;
-
+    padding: 0;
+    
+    
 }
-
+.hero h1 {
+    position:absolute;
+    left: 30%;
+    bottom: 70%;
+    font-size: 5rem;
+    color: #FAFAFA;
+}
+.hero h2 {
+    margin: 2px;
+    padding: 10px;
+    color: #FAFAFA;
+}
 .hero img {
-    display:block;
     width: 100%;
+    display: block;
     height: auto;
     
 }
-
-.hero h1 {
-    position: absolute;
-    font-size: 3em;
-    padding: 10px;
-    left:36% ;
-    color: var(--nav-hover-link-color);
-    background: rgba(0, 0, 0, 0.5);;
-    
-    
-    
-}
-
 .hero article {
-    display: block;
     position: absolute;
-    left: 7%;
-    bottom: 35%;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 50px;
-    width: 960px;
-    color: white;
-    text-align: left;
-    font-size: 18px;
-    
-}
-
-.hero article img {
-    float: right;
-    width: 200px;
-    border: 2px solid #A7A7A7;
-    box-shadow: 0 0 30px #FAFAFA;
-    
-}
-.hero article h2{
-    position: absolute;
+    border: 2px solid #fafafa10;
+    left:0;
+    top: 30%;
+    width: auto;
+    height: auto;
     color: #FAFAFA;
-    bottom: 68%;
-    left: 45%;
-
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+    padding: 30px;
+    border-radius: 5px;
 }
-
-section {
-    
-    padding: 20px;
-    
+.hero article p{
+    text-align: left;
+    padding: 25px;
+    font-size: 20px;
+}
+.hero article img{
+    float: right;
+    width: 350px;
+    padding: 1px;
+    border: 2px solid #4a4e69;
+    box-shadow: 0 0 30px #FAFAFA;
 }
 section img{
     display: flex;
-    width: 750px;
+    width: 800px;
     border: 2px solid #4a4e69;
     box-shadow: 0 0 30px gray;
-    border-radius: 10px;
+    border-radius: 5px;
+    
+    
+    
+
 }
 
 footer {
