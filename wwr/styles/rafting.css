@@ -15,9 +15,8 @@
     --nav-hover-background-color: #8d99ae;
 }
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
     
     }
 
@@ -49,16 +48,9 @@ header {
 
 header img {
     margin-right: 10px;
-    width: 90px;
+    width: 100px;
 }
 
-header h1 {
-    margin: 0;
-    position: absolute;
-    right: 87%;
-    font-size: 2rem;
-    
-}
 
 nav {
     background-color: var(--nav-background-color);
@@ -104,9 +96,11 @@ section {
     color: #FAFAFA;
 }
 .hero h2 {
+    position: absolute;
     margin: 2px;
     padding: 10px;
     color: #FAFAFA;
+    visibility:hidden ;
 }
 .hero img {
     width: 100%;
@@ -117,35 +111,41 @@ section {
 .hero article {
     position: absolute;
     border: 2px solid #fafafa10;
-    left:0;
+    left: 7%;
     top: 30%;
-    width: auto;
+    max-width: 85%;
     height: auto;
     color: #FAFAFA;
     background: #fafafa10;
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(0.4rem);
-    padding: 30px;
-    border-radius: 5px;
+    padding: 25px;
+    border-radius: 2px;
 }
 .hero article p{
     text-align: left;
     padding: 25px;
-    font-size: 20px;
+    font-size: 18px;
+    
 }
 .hero article img{
     float: right;
-    width: 350px;
+    width: 300px;
     padding: 1px;
-    border: 2px solid #4a4e69;
-    box-shadow: 0 0 30px #FAFAFA;
+    
+}
+section {
+    padding: 10px;
+    position: relative;
+    
+    
 }
 section img{
-    display: flex;
-    width: 800px;
+    
+    width: 600px;
     border: 2px solid #4a4e69;
     box-shadow: 0 0 30px gray;
-    border-radius: 5px;
+    border-radius: 2px;
     
     
     
