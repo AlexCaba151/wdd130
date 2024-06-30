@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
+        
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -9,17 +10,47 @@
 
 
 nav {
+        display: flex;
         background-color: steelblue;
-        padding: 10px;
-        
+        padding: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
 }
 
 nav a {
-        color: white;
         display: block;
-        padding: 20px;
+        color: #FAFAFA;
+        padding: 0.5rem;
         font-family: "Kanit", sans-serif;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: relative;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+nav a:link,
+nav a:visited {
+        color: #FAFAFA;
+}
+
+nav a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #313131;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        
+}
+
+nav a:hover::after {
+        transform: scaleX(1);
+}
+
 
 h1, h2, h3, h4, h5, h6 {
         color: steelblue;
@@ -33,7 +64,7 @@ main img {
         border: 1px solid steelblue;
         padding: 2px;
         box-shadow: 0 0 30px gray;
-        border-radius: 10px;
+        border-radius: 2px;
         margin: 0 0 1rem 1rem;
 }
 
@@ -43,30 +74,30 @@ p {
         font-family:"Roboto Mono", monospace;
         margin: 1rem;
 }
-main{
-        max-width: 840px;
-}
-aside{
-        width:20em;
-        text-align: center;
-        position: relative;
-        
-}
+
+
 aside img{
-        width: 200px;
-        height: auto;
+        width: 280px;
+        height: 300px;
+        
 }
 aside h2{
         position: absolute;
-        top: -6px;
+        top: 5%;
         right: 1px;
-        left: 1px;
+        left: 22%;
         font-size: 18px;
+        color: #fafdfa;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 footer{
         margin-top: 15px;
         border-top: 1px solid #000;
         text-align: center;
+}
+header, footer{
+        
+        margin: 0 auto;
 }
 .box {
         margin: 1rem;
@@ -77,4 +108,19 @@ footer{
 }
 .indent{
         padding-left: 2rem;
+}
+.grid{
+        display: grid;
+        align-items: center;
+        
+}
+main {
+        grid-column: 2/3;
+        margin: 1rem;
+}
+aside{
+        width: 20rem;
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 1/2;
 }
