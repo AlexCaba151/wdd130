@@ -16,6 +16,7 @@
 }
 
 * {
+
     padding: 0;
     margin: 0;
     
@@ -23,8 +24,7 @@
 
 body {
     font-family: var(--paragraph-font);
-    
-    
+    font-size: 1.5rem;
 }
 
 h1,
@@ -42,7 +42,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 header img {
@@ -51,35 +51,48 @@ header img {
 }
 
 nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
     display: flex;
-    justify-content: space-between;
+    background-color: var(--nav-background-color);
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
 nav a {
     display: block;
-    color: var(--nav-link-color);
+    color: #FAFAFA;
+    padding: 0.5rem;
+    font-family: "Kanit", Light300;
     text-decoration: none;
-    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 nav a:link,
 nav a:visited {
-    color: var(--accent1-color);
+    color: #FAFAFA;
 }
 
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent1-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+
 }
 
-section {
-    padding: 10px;
-    display:block
-    
-    
+nav a:hover::after {
+    transform: scaleX(1);
 }
+
 
 .hero {
     position: relative;
@@ -89,7 +102,7 @@ section {
 }
 .hero h1 {
     position:absolute;
-    left: 30%;
+    left: 38%;
     bottom: 70%;
     font-size: 5rem;
     color: #FAFAFA;
@@ -113,22 +126,20 @@ section {
 .hero article {
     position: absolute;
     border: 2px solid #fafafa10;
-    left: 7%;
-    top: 30%;
-    max-width: 85%;
-    height: auto;
     color: #FAFAFA;
     background: #fafafa10;
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(0.4rem);
-    padding: 25px;
+    padding: 20px;
+    margin: 100px;
     border-radius: 2px;
-    min-width: 300px;
+    
+    
 }
 .hero article p{
     text-align: left;
     padding: 25px;
-    font-size: 18px;
+    
     
 }
 .hero article img{
@@ -140,12 +151,13 @@ section {
 section {
     padding: 10px;
     position: relative;
-    
+    padding: 10px;
     
 }
 section img{
     
-    width: 600px;
+    width: 350px;
+    height: 250px;
     border: 2px solid #4a4e69;
     box-shadow: 0 0 30px gray;
     border-radius: 2px;
@@ -160,6 +172,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: small;
 }
 
 footer nav a {
@@ -175,3 +189,17 @@ footer nav img {
     background-color: var(--accent1-color);
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+section h2{
+    text-align: center;
+}
+.flex-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
