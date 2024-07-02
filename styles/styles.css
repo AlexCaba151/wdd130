@@ -4,13 +4,12 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* Class Selectors */
+        
 }
-
 
 nav {
         display: flex;
-        background-color: steelblue;
+        background-color: #232323;
         padding: 1rem;
         justify-content: space-evenly;
         align-items: center;
@@ -40,7 +39,7 @@ nav a::after {
         bottom: 0;
         width: 100%;
         height: 3px;
-        background-color: #313131;
+        background-color: #FAFAFA;
         transform: scaleX(0);
         transition: transform 0.3s ease-in-out;
         
@@ -52,7 +51,7 @@ nav a:hover::after {
 
 
 h1, h2, h3, h4, h5, h6 {
-        color: steelblue;
+        color: #232323;
         font-family: "Kanit", sans-serif;
 }
 
@@ -70,8 +69,9 @@ main img {
 p {
         padding: 0;
         font-size: 16px;
-        font-family:"Roboto Mono", monospace;
+        font-family: "Roboto Mono", monospace;
         margin: 1rem;
+        
 }
 
 
@@ -104,6 +104,8 @@ header, footer{
         padding: 1rem;
         background-color: #ddd;
         color: #000;
+        font-family: "Kanit", sans-serif;
+        text-decoration: none;
 }
 .indent{
         padding-left: 2rem;
