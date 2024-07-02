@@ -24,7 +24,7 @@
 
 body {
     font-family: var(--paragraph-font);
-    font-size: 1.5rem;
+    
 }
 
 h1,
@@ -35,44 +35,60 @@ h5,
 h6 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
+    font-size: 2rem;
+    
 }
 
 header {
     background-color: var(--accent1-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: 95px 2.5fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    
+    
+    
 }
+.logo {
+    margin: 0 0.25rem 0 1rem;
+    width: 94px;
+    height: auto;
+}
+header h1{
+    
+    font-size: 3rem;
+    color: var(--nav-background-color);
 
-header img {
-    margin-right: 10px;
-    width: 100px;
 }
 
 nav {
-    display: flex;
+    border-radius: 10px;
+    text-align: right;
     background-color: var(--nav-background-color);
-    padding: 1rem;
-    justify-content: space-evenly;
-    align-items: center;
+    
     
 }
-
+.navigation {
+    display: flex;
+    list-style: none;
+}
+.navigation li {
+    flex: 1 1 100%;
+}
 nav a {
-    display: block;
+    display: inline-block;
     color: #FAFAFA;
-    padding: 0.5rem;
-    font-family: "Kanit", Light300;
-    text-decoration: none;
-    font-size: 1.2rem;
+    padding: 10px;
+    font-family: "Kanit", sans-serif;
+    text-decoration:none;
+    font-size: 1.3rem;
     font-weight: 700;
     position: relative;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-nav a:link,
-nav a:visited {
+nav a:link, nav a:visited {
     color: #FAFAFA;
 }
 
@@ -82,10 +98,11 @@ nav a::after {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 3px;
-    background-color: var(--accent1-color);
+    height: 5px;
+    background-color: #FAFAFA;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
 
 }
 
@@ -102,18 +119,19 @@ nav a:hover::after {
 }
 .hero h1 {
     position:absolute;
-    left: 38%;
-    bottom: 70%;
+    left: 40%;
+    bottom: 85%;
     font-size: 5rem;
     color: #FAFAFA;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .hero h2 {
-    position: absolute;
+    position: relative;
     margin: 2px;
     padding: 10px;
     color: #FAFAFA;
-    visibility:hidden ;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .hero img {
@@ -132,74 +150,120 @@ nav a:hover::after {
     -webkit-backdrop-filter: blur(0.4rem);
     padding: 20px;
     margin: 100px;
-    border-radius: 2px;
+    border-radius: 50px;
     
     
 }
 .hero article p{
     text-align: left;
     padding: 25px;
-    
+    font-size: 1.5rem;
     
 }
 .hero article img{
     float: right;
-    width: 300px;
+    width: 400px;
     padding: 1px;
+    border-radius: 50px;
     
 }
 section {
-    padding: 10px;
+    padding: 30px;
     position: relative;
-    padding: 10px;
+    margin: auto;
     
 }
-section img{
-    
-    width: 350px;
-    height: 250px;
-    border: 2px solid #4a4e69;
-    box-shadow: 0 0 30px gray;
-    border-radius: 2px;
-    
-    
-    
-
+section p{
+    font-size: 1.4rem;
 }
-
-footer {
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    font-size: 1rem;
+}
+.foot {
     background-color: var(--accent2-color);
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    
+    
+    
+
+}
+footer p{
+    text-align:center;
+    font-size:medium;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: small;
+    position: relative;
+    top: 30px;
+    
 }
-
-footer nav a {
-    margin: 0 10px;
-}
-
 footer nav img {
-    vertical-align: middle;
+    position: relative;
+    display: flex;
     width: 20px;
+    
 }
 
 .sociallinks {
     background-color: var(--accent1-color);
-}
-
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 5px;
+    padding: 0;
     
 }
+
+.flex-img{
+    
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    
+}
+.flex-img img{
+    max-width: 350px;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.flex-img img.active {
+    transform: scale(2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 10;
+    max-width: 90%;
+    max-height: 90%;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Fondo oscuro semitransparente */
+    display: none;
+    /* Oculto por defecto */
+    z-index: 9;
+    /* Debajo de la imagen agrandada */
+}
+
 section h2{
     text-align: center;
 }
 .flex-box{
-    display:flex;
-    align-items:center;
-    justify-content:center;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
