@@ -37,7 +37,7 @@ h1,h2, h3, h4, h5, h6 {
 header {
     background-color: var(--accent1-color);
     display: grid;
-    grid-template-columns: 95px 2.5fr 1fr;
+    grid-template-columns: 90px 3fr 1.8fr .0fr;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
@@ -117,7 +117,7 @@ nav a:hover::after {
     position:absolute;
     left: 40%;
     bottom: 85%;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #FAFAFA;
     
 }
@@ -139,14 +139,15 @@ nav a:hover::after {
 
 .hero article {
     position: absolute;
-    border: 2px solid #fafafa10;
+    border: 1px solid #fafafa10;
     color: #FAFAFA;
     background: #fafafa10;
-    backdrop-filter: blur(0.4rem);
-    -webkit-backdrop-filter: blur(0.4rem);
+    backdrop-filter: blur(0.2rem);
+    -webkit-backdrop-filter: blur(0.2rem);
     padding: 20px;
     margin: 100px;
-    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    
     
     
 }
@@ -158,10 +159,11 @@ nav a:hover::after {
 }
 .hero article img{
     float: right;
-    width: 400px;
+    width: 350px;
     padding: 1px;
-    border-radius: 50px;
     
+    border: 2px solid #8d99ae;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
 }
 
 figure {
@@ -177,15 +179,13 @@ figcaption {
     padding: 3px;
     text-align: center;
     font-size: 1rem;
-    border-radius: 50px;
+    
 }
 .foot {
     background-color: var(--accent2-color);
     color: #fff;
     padding: 10px;
-    
-    
-    
+
 
 }
 footer p{
@@ -223,7 +223,7 @@ footer nav img {
     height: 250px;
     cursor: pointer;
     transition: transform 0.5s ease;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 .flex-img img.active {
     transform: scale(2);
@@ -268,7 +268,7 @@ align-items: center;
     width: 400px;
     grid-column: 2/3;
     grid-row: 2;
-    border-radius: 50px;
+    border-radius: 5px;
     
 }
 .history p:first-of-type{
