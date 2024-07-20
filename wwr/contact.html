@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="conctact page">
+    <meta name="author" content="Yerlin A. Rodriguez">
+    <title>Contact | Rafting Us </title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/logo.png" alt="logo">
+        <h1>Rafting Us</h1>
+        <nav>
+            <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>    
+                
+                
+                
+            </ul>
+        </nav>
+    </header>
+<main class=" grid contactus">
+        <img src="images/contact-img.jpg" alt="little" class="con-hero">
+        <form action="#" class="contact">
+            <fieldset class="contact-fields">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="from">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="number">Phone number:</label>
+                <input type="number" name="number" id="number">
+                <label for="reason">Reason for contacting us?</label>
+                <select name="reason" id="reason">
+                    <option value="" selected disabled>-- Please select One -- </option>
+                    <option value="general">General Inquiry</option>
+                    <option value="reservation">Reservation Question </option>
+                    <option value="suggestion">Website Suggestion/option>
+                </select>
+                <label for="comment">Please enter your comment:</label>
+                <textarea name="comment" id="comment" cols="35" rows="10"></textarea>
+                <div class="signup">
+                    <input type="checkbox" name="subscribe" id="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="submit">Send Message</button>
+        </form>
+        <div class="address">
+            <div class="add-phone">
+                <address>525 S Center St,<br> Rexburg, ID 83460</address>
+                <a href="#">(123) 555-1234</a>
+                <a href="mailto:info@raftingus.com">email: info@raftingus.com</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2213.9662753582243!2d-111.78361571748994!3d43.81450909974499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1707770074960!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>↩
+            </div>
+        
+        <hr class="hrule">
+        <div class="grid employees">
+            <figure class="employee">
+                <img src="images/CEO.jpg" alt="CEO">
+                <figcaption>CEO, Mad Max</figcaption>
+            </figure>
+            <figure class="employee">
+                <img src="images/VP-sales.jpg" alt="VP Sales">
+                <figcaption>VP Sales, Emily Stewart</figcaption>
+            </figure>
+            <figure class="employee">
+                <img src="images/tour-guide.jpg" alt="Jen">
+                <figcaption>Tour Guide, Sally</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer class="foot">
+        
+        <nav class="sociallinks">
+            <p>©2024  Rafting Us Yerlin A. Rodriguez</p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/FB-icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/X-icon.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/Instagram-icon.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+    <div class="overlay"></div> <!-- Superposición para la imagen agrandada -->
+    <script src="js/script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
