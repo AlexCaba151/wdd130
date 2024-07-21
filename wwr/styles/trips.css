@@ -118,7 +118,7 @@ nav a:hover::after {
     color: #FAFAFA;
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 55%;
+    font-size: 5rem;
 }
 
 .hero h2 {
@@ -146,7 +146,7 @@ nav a:hover::after {
     padding: 20px;
     margin: 100px;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
-    margin-bottom: 5%;
+    margin-bottom: 20%;
     
     
     
@@ -159,7 +159,7 @@ nav a:hover::after {
 }
 .hero article img{
     float: right;
-    width: 290px;
+    width: 350px;
     padding: 1px;
     
     border: 2px solid #8d99ae;
@@ -268,13 +268,12 @@ align-items: center;
 }
 
 .history img {
-    width: 350px;
+    width: 400px;
     grid-column: 2/3;
     grid-row: 2;
-    border-radius: 2px;
+    border-radius: 5px;
     
 }
-
 .history p:first-of-type{
     grid-column: 1/2;
     grid-row: 2;
@@ -297,4 +296,74 @@ align-items: center;
 section h2{
     text-align: center;
     
+}
+
+
+.booking-section {
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 20px;
+}
+
+.booking-section p {
+    font-size: 1.1em;
+    margin: 0 20px;
+}
+
+.book-now-button {
+    background-color: var(--nav-background-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.book-now-button:hover {
+    background-color: var(--nav-link-color);
+    transform: scale(1.03);
+}
+
+hr {
+    border: 0;
+    border-top: 3px solid #ccc;
+    margin: 40px 0;
+}
+
+.trip-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.trip-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.trip-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trip {
+    margin: 10px;
+    text-align: center;
+}
+
+.trip img {
+    width: 300px;
+    height: auto;
+}
+
+.trip p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    
+}
+
+.trip .book-now-button {
+    margin-top: 5px;
 }
