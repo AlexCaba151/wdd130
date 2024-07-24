@@ -65,8 +65,10 @@ header h1 {
 }
 
 nav {
-    border-radius: 10px;
+    border-radius: 2px;
     background-color: var(--nav-background-color);
+    margin-right: 20px;
+    
 
 
 }
@@ -82,20 +84,19 @@ nav {
 
 nav a {
     display: inline-block;
-    color: #FAFAFA;
     padding: 10px;
-    font-family: "Kanit", sans-serif;
+    font-family: 'Kanit', Light300;
     text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 800;
     position: relative;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 14px;
-}
+    font-size: 18px;
+    margin-left: 20px;
+    }
+
 
 nav a:link,
 nav a:visited {
-    color: #FAFAFA;
+    color: var(--nav-hover-link-color);
 }
 
 nav a::after {
@@ -105,7 +106,7 @@ nav a::after {
     bottom: 0;
     width: 100%;
     height: 5px;
-    background-color: #FAFAFA;
+    background-color: var(--nav-hover-link-color);
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
     border-radius: 5px;
@@ -115,13 +116,13 @@ nav a::after {
 nav a:hover::after {
     transform: scaleX(1);
 }
-
 figure {
 
     display: flex;
     flex-flow: column;
     padding: 5px;
     margin: auto;
+    
 }
 
 
@@ -131,6 +132,7 @@ figcaption {
     padding: 3px;
     text-align: center;
     font-size: 1rem;
+    ;
     
 }
 
@@ -314,7 +316,7 @@ select:focus {
     background-color: var(--nav-background-color);
     color: #FAFAFA;
     box-shadow: 5px 3px 3px #000;
-    border-radius: 50px;
+    border-radius: 5px;
     font-size: 1.3rem;
     letter-spacing: 2px;
     font-weight: 900;
@@ -382,9 +384,9 @@ select:focus {
 }
 figure img{
     
-            max-width: 600px;
-            height: auto;
-            transition: transform 0.5s ease;
-            
-        
+    max-width: 400px;
+    height: 300px;
+    transition: transform 0.5s ease;
+    
+    
 }
