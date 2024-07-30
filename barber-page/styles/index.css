@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+:root {
+    --primary-color: #220901;
+    --secondary-color: #621708;
+    --accent1-color: #941B0C;
+    --accent2-color: #BC3908;
+
+    --heading-font: 'Zain', Bold700;
+    --paragraph-font: 'PT Sans', sans-serif;
+
+    --nav-background-color: #220901;
+    --nav-link-color: #BC3908;
+    --nav-hover-link-color: #F6AA1C;
+    --nav-hover-background-color: #941B0C;
+}
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--paragraph-font);
+    background-color: #0c0c0c;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+    
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(/barber-page/images/barber-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background:var(--nav-hover-link-color);
+    color: #220901;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+    
+}
+
+.btn img{
+    width: 45px;
+    margin-right: 10px ;
+}
+.content{
+    margin-top: 5%;
+    color: #4e4c4c;
+    max-width: 620px;
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px;
+    color: #F6AA1C;
+}
+.content p{
+    margin-bottom: 100px;
+    color: #621708;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+
+}
+hr {
+    border: 0;
+    border: 5px solid var(--nav-hover-link-color);
+    margin: 40px 0;
+    
+}
+.container-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.figcaption{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        justify-content: center;
+        /* Centra el contenido del grid horizontalmente */
+        align-items: center;
+        /* Centra el contenido del grid verticalmente */
+        padding: 0;
+        margin: 0;
+}
+.figcaption img {
+    width: 350px;
+    height:380px;
+    border-radius: 10px;
+}
+
+.results-h2{
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    text-align: center;
+    color:#fafafa;
+}
+
+.btn2 {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background: var(--nav-hover-link-color);
+    color: #220901;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+    margin: 0 auto;
+    margin-top: 25px;
+
+}
+
+.btn2 img {
+    width: 45px;
+    margin-right: 10px;
+}
+.history {
+        
+            margin: 10px;
+            border: 2px solid rgba(0, 0, 0, .1);
+            padding: 15px;
+            font-size: 18px;
+            color: #fafafa;
+}
+.history img{
+        float:right;
+        border-radius: 10px;
+        margin:  0 0 10px 15px;
+        padding: 5px;
+        width: 300px;
+        
+}
+blockquote {
+    margin: 0;
+}
+.history h1{
+    color:#fafafa;
+    text-align: center;
+}
+

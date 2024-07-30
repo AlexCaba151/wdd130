@@ -26,6 +26,9 @@ body {
     font-family: var(--paragraph-font);
     
 }
+p{
+    color: #FAFAFA;
+}
 
 h1,h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -110,8 +113,6 @@ nav a:hover::after {
 .hero {
     position: relative;
     padding: 0;
-    
-    
 }
 .hero h1 {
     position:absolute;
