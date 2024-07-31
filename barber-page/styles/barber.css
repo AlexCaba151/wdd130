@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 :root {
     --primary-color: #220901;
     --secondary-color: #621708;
     --accent1-color: #941B0C;
     --accent2-color: #BC3908;
 
-    --heading-font: 'Zain', Bold700;
-    --paragraph-font: 'PT Sans', sans-serif;
+    --heading-font: 'Roboto Mono', sans-serif;
+    --paragraph-font: 'Monserrat', sans-serif;
 
     --nav-background-color: #220901;
     --nav-link-color: #BC3908;
@@ -101,7 +101,7 @@ nav a:hover::after {
 .container1 {
     width: 100%;
     min-height: 100vh;
-    background: url('/images/barber-hero.jpg');
+    background: url('../images/barber-hero.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
@@ -112,12 +112,13 @@ nav a:hover::after {
     padding: 10px 20px;
     border: 0;
     outline: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     background:var(--nav-hover-link-color);
     color: #220901;
     font-weight: 700;
     cursor: pointer;
     font-family: var(--paragraph-font);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -137,15 +138,9 @@ nav a:hover::after {
     margin-bottom: 25px;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
     color: #F6AA1C;
+    
 }
-.content p{
-    margin-bottom: 100px;
-    color: #621708;
-    font-size: 20px;
-    font-weight: 500;
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
 
-}
 hr {
     border: 0;
     border: 5px solid var(--nav-hover-link-color);
@@ -187,7 +182,7 @@ hr {
     padding: 10px 20px;
     border: 0;
     outline: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     background: var(--nav-hover-link-color);
     color: #220901;
     font-weight: 700;
@@ -195,6 +190,7 @@ hr {
     font-family: var(--paragraph-font);
     margin: 0 auto;
     margin-top: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
 
