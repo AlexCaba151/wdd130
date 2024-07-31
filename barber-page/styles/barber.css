@@ -101,7 +101,7 @@ nav a:hover::after {
 .container1 {
     width: 100%;
     min-height: 100vh;
-    background: url('../images/barber-hero.jpg');
+    background: url('/images/barber-hero.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
