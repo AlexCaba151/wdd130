@@ -80,6 +80,7 @@ nav a {
     text-align: center;
     font-size: 16px;
     color: var(--nav-hover-link-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 nav a::after {
@@ -119,7 +120,10 @@ nav a:hover::after {
     cursor: pointer;
     font-family: var(--paragraph-font);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: #BC3908;
 }
 
 .btn img{
@@ -264,11 +268,12 @@ hr {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
 }
 
 .learn-more-btn:hover {
-    background-color: #c9302c;
+    background-color: #BC3908;
 }
 
 .menu-toggle {
