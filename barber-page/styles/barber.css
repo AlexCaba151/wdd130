@@ -423,7 +423,7 @@ hr {
     }
 
     .figcaption {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr  1fr;
         gap: 20px;
     }
 
@@ -451,14 +451,17 @@ hr {
 
     .text-container h2 {
         font-size: 20px;
+        text-align: center;
     }
 
     .text-container h3 {
         font-size: 16px;
+        text-align: center;
     }
 
     .text-container p {
         font-size: 14px;
+        text-align: center;
     }
 
     .learn-more-btn {
