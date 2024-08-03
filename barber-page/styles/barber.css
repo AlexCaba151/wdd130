@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 :root {
-    --primary-color: #220901;
-    --secondary-color: #621708;
-    --accent1-color: #941B0C;
-    --accent2-color: #BC3908;
+    --primary-color: #17153B;
+    --secondary-color: #2E236C;
+    --accent1-color: #433D8B;
+    --accent2-color: #2A2F4F;
 
     --heading-font: 'Roboto Mono', sans-serif;
     --paragraph-font: 'Monserrat', sans-serif;
@@ -21,7 +21,7 @@
 }
 body {
     font-family: var(--paragraph-font);
-    background-color: #0c0c0c;
+    
 
 }
 
@@ -35,77 +35,69 @@ h6 {
     
     
 }
-header {
-    display: flex;
-    /* Cambiado de grid a flexbox */
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    width: 100%; 
+nav{
+    background-color: rgba(9, 0, 77, 0.849);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0);
 }
-
-.logo {
-    margin: 0 0.25rem 0 1rem;
-    width: 195px;
-    cursor: pointer;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+nav ul{
     width: 100%;
-}
-
-.navigation {
-    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-
-.navigation li {
-    margin: 0 20px;
+nav li{
+    height: 80px;
 }
-
-nav a {
-    display: inline-block;
-    padding: 10px;
-    font-family: var(--heading-font);
+nav a{
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    font-weight: 800;
-    position: relative;
-    text-align: center;
-    font-size: 16px;
-    color: var(--nav-hover-link-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    color: #F6AA1C;
+    font-family: var(--heading-font);
+    font-size: 18px;
+}
+nav a:hover{
+    background-color: #f6aa1c8a;
 }
 
-nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color:rgba(9, 0, 77, 0.655) ;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.189);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.sidebar li{
     width: 100%;
-    height: 5px;
-    background-color: var(--nav-hover-link-color);
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-    border-radius: 5px;
 }
-
-nav a:hover::after {
-    transform: scaleX(1);
+.sidebar a{
+    width: 100%;
 }
 .container1 {
+    
     width: 100%;
     min-height: 100vh;
-    background: url('../images/barber-hero.jpg');
+    background:linear-gradient(rgba(9, 0, 77, 0.088),rgba(9, 0, 77, 0.997)),url('../images/barber-hero.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
     
+}
+.container1 img{
+width: 380px;
+cursor: pointer;
 }
 
 .btn {
@@ -131,7 +123,7 @@ nav a:hover::after {
 
 
 .content{
-    margin-top: 5%;
+    margin-top: 0;
     color: #4e4c4c;
     max-width: 620px;
 }
@@ -139,22 +131,21 @@ nav a:hover::after {
     font-size: 70px;
     font-weight: 600;
     line-height: 70px;
-    margin-bottom: 25px;
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 4px 4px 2px rgba(244, 242, 242, 0.463);
     color: #F6AA1C;
     
     
 }
 
 .content h3{
-    text-shadow: 1px 1px 4px #f5f5f5, 0 0 1em #4e4c4c, 0 0 0.2em #f5f5f5;
-    
+    text-shadow: 1px 1px 4px #f5f5f567, 0 0 1em #4e4c4c, 0 0 0.2em #f5f5f53e;
+    color: #f5f5f5;
     margin:25px 0;
 }
 
 hr {
     border: 0;
-    border: 5px solid var(--nav-hover-link-color);
+    border: 5px solid #433D8B;
     margin: 40px 0;
     
 }
@@ -166,7 +157,7 @@ hr {
 .figcaption{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 50px;
         justify-content: center;
         /* Centra el contenido del grid horizontalmente */
         align-items: center;
@@ -175,9 +166,10 @@ hr {
         margin: 0;
 }
 .figcaption img {
-    width: 300px;
-    height:330px;
-    border-radius: 10px;
+    width: 350px;
+    height:350px;
+    border-radius: 0 50px;
+    border: 2px solid #2E236C;
 }
 .figcaption img:hover{
     transform: scale(1.03);
@@ -188,6 +180,7 @@ hr {
     font-family: var(--heading-font);
     text-align: center;
     color:#fafafa;
+    margin: 25px;
 }
 
 
@@ -207,19 +200,22 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: px;
+    max-width: 1600px;
     margin:  0 auto;
-    background-color: #4444447c;
+    background-color: #444444e9;
     box-shadow: 0 0 10px rgba(168, 155, 155, 0.474);
-    border-radius: 10px;
+    border-radius: 2px;
     overflow: hidden;
+    text-align: center;
     
 }
 
 .image-container img {
-    width: 600px;
+    width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     object-fit: cover;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .text-container {
@@ -248,7 +244,7 @@ hr {
     line-height: 1.6;
     margin-bottom: 20px;
     color: #f5f5f5;
-    text-align: left;
+    text-align: center;
     
 }
 
@@ -269,7 +265,7 @@ hr {
     margin-right: auto;
 }
 #services {
-    background-color: #4444447c;
+    background-color: #444444e9;
     padding: 25px;
     border-radius: 8px;
     width: 80%;

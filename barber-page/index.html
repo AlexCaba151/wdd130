@@ -6,44 +6,56 @@
     <meta name="description" content="Page dedicated of a barbershop o person">
     <meta name="author" content="Yerlin A. Rodriguez">
     <link rel="stylesheet" href="styles/barber.css">
+    <script src="JS/script.js"></script>
     <title>AntonyBlendz | Home Page </title>
 </head>
 <body>
-
-
-    <div class="container1">
     <header>
-        <img class="logo" src="images/logo.png" alt="logo">
         <nav>
-            <ul class="navigation">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#history">ABOUT ME</a></li>
-            <li><a href="#gallery">SERVICES</a></li>
-            <li><a href="#contact">CONTACT</a></li>    
+            <ul class="sidebar" id="sidebar">
+                <li id="hideSidebar"><a href="javascritp:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#F6AA1C"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+                
+            </ul>
+            <ul>
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="showSidebar"><a href="javascritp:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#F6AA1C"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
-        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
     </header>
+    <div class="container1">
+        <img src="images/logo.png" alt="logo">
         <div class="content">
             <h1>Where Style Meets Substance </h1>
             <h3>Every cut, trim, and blend is a testament to his artistry, designed to bring out the best in you</h3>
-            <button class="btn">BOOK AN APPOINTMENT</button>
+            
         </div>
-    </div>
-    <hr>
+            </div>
     <div class="history" id="history">
     <section class="barber-section">
         <div class="container">
             <div class="image-container">
                 <img src="images/antonyblendz.jpg" alt="Barber">
+                <img src="images/barber2.jpg" alt="Barber">
             </div>
             <div class="text-container">
-                <h2>Respect of the Heritage of Classic Barbering.</h2>
+                <h2>Respect of the Heritage of Classic Barbering</h2>
                 <h3>Haircuts in Brooklyn</h3>
                 <p>Hailing from the Dominican Republic and growing up in the USA, Antony, the skilled hand behind AntonyBlendz, brings a rich cultural blend to his craft. Over a decade ago, he began his journey, refining his skills and developing a unique style that seamlessly combines classic techniques with contemporary trends.</p>
                 <p>Starting in a modest neighborhood setting, Antony's dedication and talent quickly garnered a devoted clientele. His knack for understanding each individual's style needs and his meticulous attention to detail have set him apart in the community.</p>
                 <p>AntonyBlendz is a reflection of Antony’s commitment to precision, creativity, and the power of personal expression. His mission is to offer an exceptional grooming experience that not only enhances your look but also boosts your confidence.</p>
                 
+            </div>
+                <div class="image-container">
+                <img src="images/barber3.jpg" alt="Barber">
+                <img src="images/barber4.jpg" alt="Barber">
             </div>
         </div>
     </section>
@@ -113,6 +125,5 @@
         
 
     <hr>
-    <script src="JS/script.js"></script>
 </body>
 </html>
