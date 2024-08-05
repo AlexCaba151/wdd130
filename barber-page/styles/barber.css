@@ -90,7 +90,8 @@ nav a:hover{
     background:linear-gradient(rgba(9, 0, 77, 0.088),rgba(9, 0, 77, 0.997)),url('../images/barber-hero.jpg');
     background-size: cover;
     background-position: center;
-    padding: 10px 8%;
+    padding: 10px 2%;
+    margin-bottom: 100px;
     
 }
 .container1 img{
@@ -143,7 +144,7 @@ cursor: pointer;
 
 hr {
     border: 0;
-    border: 5px solid #433D8B;
+    border: 5px solid #F6AA1C;
     margin: 40px 0;
     
 }
@@ -182,7 +183,7 @@ i:after {
     z-index: 2;
     width: 2rem;
     height: 2rem;
-    background: dodgerblue;
+    background: var(--accent1-color);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -328,7 +329,7 @@ input:checked+input~input:before {
     font-size: 20px;
     margin-bottom: 15px;
     color: #f5f5f5;
-    
+    text-align: left;
 }
 
 .text-container p {
@@ -336,7 +337,7 @@ input:checked+input~input:before {
     line-height: 1.6;
     margin-bottom: 20px;
     color: #f5f5f5;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -790,39 +791,32 @@ input:checked+input~input:before {
     min-height: 100vh;
     background: linear-gradient(rgba(9, 0, 77, 0.088), rgba(9, 0, 77, 0.997)), url('../images/barber-hero.jpg');
     background-size:contain;
-    background-position:  20% 70%;
+    background-position:  20% 50%;
     padding: 10px 8%;
 
 }
 .container1 img {
-    width: 180px;
+    width: 280px;
     cursor: pointer;
+    margin-left: auto;
+    
 }
     .content p {
         margin-bottom: 20px;
         font-size: 16px;
     }
 
-    .figcaption {
-        grid-template-columns: 1fr  1fr;
-        gap: 20px;
-    }
-
-    .figcaption img {
-    width: 200px;
-    height: 200px;
-    
-        
-    }
 
     .container {
+        display: flex;
         flex-direction: column;
         padding: 20px;
     }
 
     .image-container img {
-        width: 100%;
-        margin: 0;
+        flex-direction: row;
+        width: 200px;
+        margin: 10px;
         border-right: none;
         border-bottom: 1px solid #ddd;
     }
