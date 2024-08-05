@@ -748,7 +748,10 @@ input:checked+input~input:before {
         
     /* Mostrar el botón en pantallas móviles */
     }
+#services {
 
+    width: 100%;
+}
     header {
         flex-direction:row;
         align-items: flex-start;
