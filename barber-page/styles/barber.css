@@ -301,16 +301,20 @@ input:checked+input~input:before {
 }
 
 .image-container img {
-    width: 350px;
+    width: 450px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     object-fit: cover;
     display: flex;
     flex-direction: row-reverse;
-    margin: 20px;
-    border-radius: 20% 0;
+    margin: 10px;
+    
     
 }
-
+.history-hr{
+        border: none;
+        border-top: 5px solid #F6AA1C;
+        margin-bottom: 20px;
+}
 .text-container {
     padding: 0 10px;
     margin: 20px;
