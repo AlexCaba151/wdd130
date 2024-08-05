@@ -152,23 +152,115 @@ hr {
     display: flex;
     justify-content: center;
 }
-.figcaption{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-        justify-content: center;
-        /* Centra el contenido del grid horizontalmente */
-        align-items: center;
-        /* Centra el contenido del grid verticalmente */
-        padding: 0;
-        margin: 0;
+/*img slider*/
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
-.figcaption img {
-    width: 300px;
-    border-radius: 20% 0;
+i {
+    position: relative;
+    display: block;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
 }
-.figcaption img:hover{
-    transform: scale(1.03);
+
+i:before,
+i:after {
+    content: '⥪';
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    background: dodgerblue;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+i:after {
+    content: '⥭';
+    left: auto;
+    right: 1rem;
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+input {
+    appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(100%);
+    transition: transform ease-in-out 400ms;
+    z-index: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:after {
+    content: attr(title);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+input:not(checked):before {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 50%;
+    left: calc(-100% + 1rem);
+}
+
+input:checked:before {
+    display: none;
+    left: 1rem;
+}
+
+input:checked {
+    transform: translateX(0);
+    pointer-events: none;
+    z-index: 0;
+    box-shadow: -5px 10px 20px -15px rgba(0, 0, 0, 1);
+}
+
+input:checked+input:before {
+    left: -3rem;
+}
+
+input:checked+input~input:before {
+    display: none;
 }
 
 .results-h2{
@@ -199,7 +291,7 @@ hr {
     align-items: center;
     max-width: 1200px;
     margin:  0 auto;
-    background-color: #9e9d9de9;
+    background-color: #444444e9;
     box-shadow: 0 0 10px rgba(168, 155, 155, 0.474);
     border-radius: 10px;
     overflow: hidden;
@@ -214,7 +306,7 @@ hr {
     display: flex;
     flex-direction: row-reverse;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 20% 0;
     
 }
 
@@ -266,6 +358,7 @@ hr {
 }
 #services {
     background-color: #444444e9;
+    box-shadow: 0 0 10px rgba(168, 155, 155, 0.474);
     padding: 25px;
     border-radius: 8px;
     width: 70%;
@@ -682,7 +775,7 @@ hr {
     }
 
     nav a {
-        font-size: 12px;
+        font-size: 12sspx;
         /* Reducir tamaño de fuente para móviles */
     }
 .content{
@@ -692,6 +785,15 @@ hr {
         font-size: 70px;
         line-height: 70px;
     }
+.container1 {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(9, 0, 77, 0.088), rgba(9, 0, 77, 0.997)), url('../images/barber-hero.jpg');
+    background-size:contain;
+    background-position:  20% 70%;
+    padding: 10px 8%;
+
+}
 .container1 img {
     width: 180px;
     cursor: pointer;
