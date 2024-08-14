@@ -57,13 +57,10 @@ h1, h2, h3, h4, h5, h6 {
 
 main img {
         float: right;
-        width: 150px;
-        height: auto;
-        border: 1px solid steelblue;
-        padding: 2px;
-        box-shadow: 0 0 30px gray;
-        border-radius: 2px;
+        display: block;
         margin: 0 0 1rem 1rem;
+        width: 150px;
+        border-radius: 10px;
 }
 
 p {
@@ -128,4 +125,20 @@ aside{
 header, footer, .grid {
         margin: 0 auto;
         max-width: 840px;
+}
+ul img{
+        
+        width: 28px;
+        margin-top: 50px;
+        background: none;
+        border: none;
+        box-shadow: none;
+        transition: transform 0.3s ease;
+        
+}
+ul {
+        list-style: none;
+}
+ul img:hover{
+        transform: translateY(-5px);
 }

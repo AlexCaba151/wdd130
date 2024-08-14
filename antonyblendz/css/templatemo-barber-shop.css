@@ -535,7 +535,7 @@ strong {
 }
 
 .price-list-thumb h6 strong {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .price-list-thumb-divider {
@@ -554,7 +554,7 @@ strong {
   BOOKING               
 -----------------------------------------*/
 .booking-section {
-  background-image: url('../images/vintage-chair-barbershop.jpg');
+  background-image: url('../images/barbershop.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
