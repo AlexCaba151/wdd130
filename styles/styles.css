@@ -74,7 +74,7 @@ p {
 
 aside img{
         width: 280px;
-        height: 300px;
+        
         
 }
 aside h2{
@@ -116,11 +116,14 @@ main {
         grid-column: 2/3;
         margin: 1rem;
 }
+
 aside{
         width: 20rem;
         position: relative;
         grid-column: 1/2;
         grid-row: 1/2;
+        
+        
 }
 header, footer, .grid, .container {
         margin: 0 auto;
@@ -187,7 +190,7 @@ body {
         width: 350px;
         height: 175px;
         overflow: hidden;
-        margin-top: 100px;
+        margin-top: 50px;
 }
 
 .chart-skills::before,
@@ -235,27 +238,27 @@ body {
 
 .chart-skills li:nth-child(1) {
         z-index: 4;
-        border-color: #adb5bd;
+        border-color: #003049;
         animation-name: rotate-one;
 }
 
 .chart-skills li:nth-child(2) {
         z-index: 3;
-        border-color: #6c757d;
+        border-color: #d62828;
         animation-name: rotate-two;
         animation-delay: .4s;
 }
 
 .chart-skills li:nth-child(3) {
         z-index: 2;
-        border-color: #343a40;
+        border-color: #EAE2B7;
         animation-name: rotate-three;
         animation-delay: .8s;
 }
 
 .chart-skills li:nth-child(4) {
         z-index: 1;
-        border-color: #212529;
+        border-color: #F77F00;
         animation-name: rotate-four;
         animation-delay: 1.2s;
 }
