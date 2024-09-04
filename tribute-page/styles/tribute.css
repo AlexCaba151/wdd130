@@ -1,0 +1,152 @@
+:root {
+    --color-text-shadow: rgba(0, 0, 0, 0.4);
+    --color-white: rgba(245, 245, 245, 1);
+    --color-dark: rgba(16, 16, 16, 1);
+    --color-darkgrey: rgba(51, 51, 51, 1);
+    --color-lightgrey: rgba(238, 238, 238, 1);
+    --color-orange: rgba(197, 58, 4, 1);
+    --color-darkred: rgba(119, 22, 3, 1);
+    --color-grey: rgba(128, 128, 128, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px */
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: center;
+    background-color: var(--color-white);
+    color: var(--color-darkgrey);
+    margin: 0;
+}
+
+@media (max-width: 760px) {
+    #title {
+        font-size: 5rem;
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+    }
+
+    #description {
+        padding-top: 40px;
+    }
+
+    #title,
+    #description,
+    #img-caption,
+    blockquote {
+        line-height: 1;
+    }
+}
+
+#title {
+    font-size: 8rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 1px var(--color-text-shadow);
+}
+
+#description {
+    margin-top: -2rem;
+    padding-bottom: 5px;
+}
+
+#main {
+    background: rgb(238, 238, 238);
+    margin: 30px 30px;
+    padding: 15px;
+}
+
+img {
+    display: block;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    filter: grayscale(1);
+    transition-property: filter;
+    transition-duration: 1s;
+}
+
+#image:hover {
+    filter: grayscale(0);
+    transition-property: filter;
+    transition-duration: 1s;
+}
+
+#img-div {
+    background: var(--color-white);
+    padding: 20px 10px 10px 10px;
+    margin: 0;
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+}
+
+#headline {
+    margin: 30px 0;
+}
+
+ul {
+    max-width: 900px;
+    text-align: left;
+    margin: auto;
+}
+
+li {
+    margin: 16px 0;
+}
+
+a {
+    color: var(--color-orange);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--color-darkred);
+    text-decoration: none;
+}
+
+blockquote {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 50px auto 30px auto;
+    text-align: center;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--color-darkgrey);
+    color: var(--color-lightgrey);
+    padding: 1.5rem;
+}
+
+footer a {
+    color: var(--color-grey);
+    font-weight: 600;
+}
+
+footer a:visited {
+    color: var(--color-orange);
+    font-weight: 600;
+}
