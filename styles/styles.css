@@ -122,7 +122,7 @@ aside{
         grid-column: 1/2;
         grid-row: 1/2;
 }
-header, footer, .grid {
+header, footer, .grid, .container {
         margin: 0 auto;
         max-width: 840px;
 }
@@ -367,4 +367,76 @@ body {
 }
 .card img:hover{
         transform: scale(1.03);
+}
+
+
+@media screen and (max-width: 768px) {
+        nav {
+                flex-direction: row;
+                align-items: center;
+        }
+
+        nav a {
+                margin-bottom: 0.5rem;
+        }
+
+        .grid {
+                display: block;
+        }
+
+        aside {
+                width: 100%;
+                margin-bottom: 1rem;
+        }
+        aside img{
+                width: 100%;
+        }
+        main {
+                grid-column: auto;
+        }
+
+        main img {
+                float: none;
+                margin: 1rem auto;
+                width: 200px;
+                max-width: 300px;
+        }
+
+        .project-grid p {
+                width: 100%;
+        }
+
+        .chart-skills {
+                width: 100%;
+                max-width: 350px;
+        }
+        .card{
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+        }
+}
+
+@media screen and (max-width: 480px) {
+        body {
+                font-size: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+                font-size: 1.2em;
+        }
+
+        .box {
+                margin: 0.5rem;
+                padding: 0.5rem;
+        }
+
+        .indent {
+                padding-left: 1rem;
+        }
 }
