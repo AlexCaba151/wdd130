@@ -88,7 +88,7 @@ aside h2{
 }
 footer{
         margin-top: 15px;
-        border-top: 1px solid #000;
+        border-top: 2px solid #000;
         text-align: center;
 }
 header, footer{
@@ -122,7 +122,6 @@ aside{
         position: relative;
         grid-column: 1/2;
         grid-row: 1/2;
-        
         
 }
 header, footer, .grid, .container {
